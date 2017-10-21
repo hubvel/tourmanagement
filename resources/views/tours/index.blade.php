@@ -263,6 +263,7 @@
     $(document).ready(function () {
         _form.validate({});
 
+        //: init date
         $('.tour_start_date').datetimepicker({
             format: 'YYYY-MM-DD',
             minDate: moment()
@@ -302,7 +303,7 @@
             return;
         });
 
-        //: Remove start place from list.
+        //: Remove end place from list.
         $('.end-place-append').on('click', 'i', function () {
             var _this = $(this);
 
@@ -313,7 +314,7 @@
             return;
         });
 
-        //:
+        //: Let map know start or end place
         $('#start_place').keydown(function () {
             place_focus = 'start_place';
         });
@@ -331,7 +332,7 @@
                 form_data[val.name] = val.value;
             });
 
-            //: Remove detail field
+            //: Remove detail field (will get from varible (multiple))
             $.each(detail_field, function(key, val) {
                 delete(form_data[val]);
             });

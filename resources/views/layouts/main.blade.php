@@ -18,12 +18,14 @@
             @yield('content')
         </div>
 
+        <!-- Library -->
         <script src="{{asset('js/jquery-2.2.4.min.js')}}"></script>
         <script src="{{asset('libraries/bootstrap/js/bootstrap.min.js')}}"></script>
         <script src="{{asset('libraries/jquery-validation/jquery.validate.min.js')}}"></script>
         <script src="{{asset('libraries/moment.js')}}"></script>
         <script src="{{asset('libraries/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
 
+        <!-- Google api -->
         <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAP_API_KEY')}}&libraries=places" defer></script>
 
         @stack('scripts')

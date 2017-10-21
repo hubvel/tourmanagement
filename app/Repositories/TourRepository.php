@@ -74,6 +74,12 @@ class TourRepository extends RepositoryAbstract {
                     'message' => 'Save data success'
                 ];
             }
+            else{
+                return [
+                    'success' => false,
+                    'message' => 'Save data fail!'
+                ];
+            }
 
         } catch(\Exception $ex) {
             return [
