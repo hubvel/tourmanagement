@@ -1,0 +1,13 @@
+- Responsitory
+ - Interface
+ - Abstract class
+- Add to loader (autoload/classmap) in composer.json
+
+## REACT ##
+View
+Action
+Reducers
+Connect, dispath
+
+.bind() function
+promise => then => catch

@@ -1,0 +1,37 @@
+@colorErr: #e3395e;
+
+.tour_package_modal{
+    .modal-content{
+        width: 750px;
+    }
+}
+
+label{
+    &.error{
+        color: @colorErr;
+    }
+}
+
+input{
+    &.error{
+        border-color: @colorErr;
+    }
+}
+
+.frm_tour{
+    .start-place-append,
+    .end-place-append{
+        > div{
+            padding: 3px;
+            border-bottom: 1px solid #ccc;
+
+            > i{
+                float: right;
+                &:hover{
+                    cursor: pointer;
+                    color: @colorErr;
+                }
+            }
+        }
+    }
+}
